@@ -15,7 +15,6 @@ def main():
     a = int(input('Podaj długość listy: '))
     b = int(input('Podaj element minimalny: '))
     c = int(input('Podaj element maksymalny: '))
-
     generuj(a,b,c)
     print(ile_ujemnych(lista))
 
