@@ -4,8 +4,6 @@ def generuj(n, min, max):
     for i in range(0, n):
         lista.append(random.randint(min, max))
 
-
-
 def ile_ujemnych(list):
     u = 0
     for i in list:
