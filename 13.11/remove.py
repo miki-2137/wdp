@@ -1,7 +1,6 @@
 napis = "abrakadabra"
 usuwany = "ab"
 
-
 def remove(napis, usuwany):
     for i in range(len(napis)):
         if napis[i] == usuwany[0]:
