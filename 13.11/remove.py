@@ -10,6 +10,14 @@ def remove(napis, usuwany):
                 return napis[:i] + napis[d:]
     return napis
 
+def remove_all(napis,usuwany):
+    i = O
+    while i <= len(napis):
+        napis = remove(napis.usuwany)
+        i += 1
+    return napis
+print(remove_all(napis,uswany))
+
 def remove_all(napis, usuwany):
     wynik = napis
     for i in range(len(napis)):
