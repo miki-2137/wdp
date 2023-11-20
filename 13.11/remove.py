@@ -1,5 +1,5 @@
-napis = "abrakadabra"
-usuwany = "ab"
+napis = 'abrakadabra'
+usuwany = 'ab'
 
 def remove(napis, usuwany):
     for i in range(len(napis)):
@@ -9,13 +9,15 @@ def remove(napis, usuwany):
             return napis[:i] + napis[d:]
     return napis
 
+print(remove(napis,usuwany))
+
 def remove_all(napis,usuwany):
-    i = O
+    i = 0
     while i <= len(napis):
-        napis = remove(napis.usuwany)
+        napis = remove(napis,usuwany)
         i += 1
     return napis
-print(remove_all(napis,uswany))
+print(remove_all(napis,usuwany))
 
 def remove_all(napis, usuwany):
     wynik = napis
