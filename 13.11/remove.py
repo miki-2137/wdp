@@ -3,11 +3,10 @@ usuwany = "ab"
 
 def remove(napis, usuwany):
     for i in range(len(napis)):
-        if napis[i] == usuwany[0]:
-            d = i + len(usuwany)
-            us = napis[i:d]
-            if usuwany == us:
-                return napis[:i] + napis[d:]
+        d = i + len(usuwany)
+        us = napis[i:d]
+        if usuwany == us:
+            return napis[:i] + napis[d:]
     return napis
 
 def remove_all(napis,usuwany):
