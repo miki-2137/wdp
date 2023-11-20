@@ -12,10 +12,8 @@ def remove(napis,usuwany):
 print(remove(napis,usuwany))
 
 def remove_all(napis,usuwany):
-    i = 0
-    while i <= len(napis):
+    for i in napis:
         napis = remove(napis,usuwany)
-        i += 1
     return napis
 print(remove_all(napis,usuwany))
 
