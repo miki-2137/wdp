@@ -1,14 +1,22 @@
-n = int(input('podaj liczbe: '))
+n = int(input('podaj liczbe: ')) #wzglednie pierwsze-jedyny wspolny dzielnik to 1
 
-def dzielniki(liczba):
-    dzielnik = []
-    for i in range(1,int(liczba/2+1)):
-        if liczba % i == 0:
-            dzielnik.append(i)
-    return dzielnik
+def czy_nalezy(lista,element):
+    for i in lista:
+        if i == element:
+            return True
+    return False
 
-def wz()
-
-def main():
-    print(dzielniki(n))
-main()
+def dzielniki(n):
+    dz = []
+    for i in range(1,n):
+        if n%i == 0:
+            dz.append(i)
+    return dz
+    
+def wzglednie(n):
+    wz = []
+    for i in range(1,n):
+        
+    
+print(dzielniki(n))
+print(wzglednie(n))
