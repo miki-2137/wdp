@@ -10,7 +10,7 @@ def dzielniki(n):
 def czy_pierwsza(n):
     if dzielniki(n) == [1,n]:
         return True
-    else: return False
+    return False
     
 def mn_od(n):
     mn = []
