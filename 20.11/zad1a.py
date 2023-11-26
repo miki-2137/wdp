@@ -1,22 +1,17 @@
-n = int(input('podaj liczbe: ')) #wzglednie pierwsze-jedyny wspolny dzielnik to 1
+n = int(input('podaj liczbe: '))  # wzglednie pierwsze-jedyny wspolny dzielnik to 1
 
-def czy_nalezy(lista,element):
-    for i in lista:
-        if i == element:
-            return True
-    return False
+def wzglednie(a,b):
+    x = 1
+    for i in range(1,a+1):
+        if a%i == 0 and b%i == 0:
+            x = i
+    return x == 1
 
-def dzielniki(n):
-    dz = []
-    for i in range(1,n):
-        if n%i == 0:
-            dz.append(i)
-    return dz
-    
-def wzglednie(n):
+def wszystkie(n):
     wz = []
     for i in range(1,n):
-        
-    
-print(dzielniki(n))
-print(wzglednie(n))
+        if wzglednie(i,n):
+            wz.append(i)
+    return wz
+
+print(wszystkie(n))
