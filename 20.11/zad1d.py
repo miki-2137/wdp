@@ -12,10 +12,10 @@ def fibonacci(n):
     return fb
 
 def mn(n):
-    m = []
+    m = 0
     for i in fibonacci(n):
         if i < n:
-            m.append(i)
+            m = i
     return m
 
 print(mn(n))
