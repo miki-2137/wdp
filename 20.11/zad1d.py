@@ -3,10 +3,8 @@ n = int(input('podaj liczbe: '))
 def fibonacci(n):
     fb = []
     for i in range(0,n+1):
-        if i == 0:
-            fb.append(0)
-        elif i == 1:
-            fb.append(1)
+        if i < 2:
+            fb.append(i)
         else:
             fb.append(fb[i-1]+fb[i-2])
     return fb
