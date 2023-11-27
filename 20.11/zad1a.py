@@ -1,5 +1,15 @@
 n = int(input('podaj liczbe: '))  # wzglednie pierwsze-jedyny wspolny dzielnik to 1
 
+def najw_wsp_dzielnik(a, b): 
+    if (a == b): return a 
+    elif (a > b):  
+        return najw_wsp_dzielnik(a - b, b) 
+    return najw_wsp_dzielnik(a, b - a) 
+  
+def wzglednie(a, b): 
+    if (najw_wsp_dzielnik(a, b) == 1): 
+        return True
+---------------------
 def wzglednie(a,b):
     x = 1
     for i in range(1,a+1):
