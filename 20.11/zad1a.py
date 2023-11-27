@@ -9,7 +9,7 @@ def najw_wsp_dzielnik(a, b):
 def wzglednie(a, b): 
     if (najw_wsp_dzielnik(a, b) == 1): 
         return True
----------------------
+---------------------------------------
 def wzglednie(a,b):
     x = 1
     for i in range(1,a+1):
