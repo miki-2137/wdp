@@ -4,7 +4,14 @@ def najw_wsp_dzielnik(a, b):
     if (a == b): return a 
     elif (a > b):  
         return najw_wsp_dzielnik(a - b, b) 
-    return najw_wsp_dzielnik(a, b - a) 
+    return najw_wsp_dzielnik(a, b - a)
+----------------------
+def najw_wsp_dzielnik(a, b): 
+    while b != 0:
+        temp = b
+        b = a%b
+        a = temp
+    return a
   
 def wzglednie(a, b): 
     if (najw_wsp_dzielnik(a, b) == 1): 
