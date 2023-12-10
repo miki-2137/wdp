@@ -5,11 +5,11 @@ print(d[5])
 
 zdanie = 'Ala ma kota.'
 
-def czy_nalezy(lista,n):
-    for i in lista:
-        if n == i:
-            return True
-    return False
+# def czy_nalezy(lista,n):
+#     for i in lista:
+#         if n == i:
+#             return True
+#     return False
 
 # def ile_razy(zdanie,n):
 #     suma = 0
