@@ -3,7 +3,7 @@
 d={5:3,8:4}
 print(d[5])
 
-zdanie = 'ala ma kota'
+zdanie = 'Ala ma kota.'
 
 def czy_nalezy(lista,n):
     for i in lista:
@@ -11,12 +11,12 @@ def czy_nalezy(lista,n):
             return True
     return False
 
-def ile_razy(zdanie,n):
-    suma = 0
-    for i in zdanie:
-        if czy_nalezy(i,n):
-            suma += 1
-    return suma
+# def ile_razy(zdanie,n):
+#     suma = 0
+#     for i in zdanie:
+#         if czy_nalezy(i,n):
+#             suma += 1
+#     return suma
 
 def slownik(zdanie):
     d = {}
