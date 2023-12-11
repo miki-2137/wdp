@@ -1,5 +1,19 @@
 zdanie = 'ala ma kota.'
 
+
+def slownik(zdanie):
+    d = {}
+    for i in zdanie:
+        if not i.isalpha():
+            continue
+        if i not in d:
+            d[i]=1
+        else:
+            d[i]+=1
+    return d
+
+print(slownik(zdanie))
+
 #def czy_nalezy(lista,n):
 #    for i in lista:
 #        if n == i:
