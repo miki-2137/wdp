@@ -27,7 +27,7 @@ print(slownik(zdanie))
 def litery(slownik):
     d = {}
     for k in slownik:
-        if k>='a' and k<='z':
+        if k.isalpha():
             d[k]=slownik[k]
     return d
 
