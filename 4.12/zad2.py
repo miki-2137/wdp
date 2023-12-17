@@ -1,14 +1,17 @@
-a = int(input('podaj ilosc liczb: '))
-
-def liczby(a):
+def liczby():
     liczby = []
-    for i in range(1,a+1):
-        i = input('podaj  liczbe: ')
-        if isinstance(i, int):
-            liczby.append(i)
+    while True:
+        i = input('podaj liczbe: ')
+        if not i:
+            break
+        try:
+            i = int(i)
+        except ValueError:
+            print('to nie jest liczba calkowita!!!')
         else:
-            print('podaj liczbe calkowita!!!')
+            liczby.append(i)
     return liczby
+
 
 def slownik(liczby):
     d = {}
@@ -19,4 +22,4 @@ def slownik(liczby):
             d[i]+=1
     return d
 
-print(slownik(liczby(a)))
+print(slownik(liczby()))
