@@ -15,4 +15,13 @@ def plik(plik):
     o.close()
     return l
 
-print(plik('test2.txt'))
+def slownik(lista):
+    d = {}
+    for i in lista:
+        if i not in d:
+            d[i] = 1
+        else:
+            d[i] += 1
+    return d
+
+print(slownik(plik('test2.txt')))
