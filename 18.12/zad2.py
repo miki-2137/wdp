@@ -6,3 +6,11 @@ def choinka(h):
     print(' '*h+'*')
 
 print(choinka(5))
+
+
+def choinka(h):
+    for i in range(h):
+        print((' '*(h-i-1))+('*'*(2*i+1)))
+    print((' '*(h-1))+'*')
+
+print(choinka(5))
