@@ -13,8 +13,8 @@ print(slownik(pwd))
 
 def haslo(d):
     if len(d)<2:
-        return 'zle haslo!!!'
+        return 'chujowe haslo lmao l+ratio'
     else:
-        return 'dobre haslo'
+        return 'gituwa haslo szefie 8)))'
 
 print(haslo(slownik(pwd)))
