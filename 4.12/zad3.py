@@ -1,20 +1,22 @@
-def plik(plik):
-    l = []
-    o = open(plik)
-    r = o.readlines()
-    for char in r:
-        for k in char:
-            if k.isalpha():
-                l.append(k)
-    return l
+pwd = 'Pas@'
 
-def slownik(lista):
+def slownik(string):
     d = {}
-    for i in lista:
-        if i not in d:
+    if len(string)<8:
+        d[len]=0
+        return d
+    for i in string:
+        if not i.isalpha():
+            if not i.isspace():
+                d[i] = 1
+        elif i.isupper():
             d[i] = 1
-        else:
-            d[i] += 1
     return d
 
-print(slownik(plik('test.txt')))
+def haslo(d):
+    if len(d) < 2:
+        return False
+    else:
+        return True
+
+print(haslo(slownik(pwd)))
