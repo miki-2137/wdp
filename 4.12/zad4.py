@@ -34,7 +34,7 @@ def program(sciezka):
             elementy = linia.split()
             for element in elementy:
                 try:
-                    liczba = int(element)
+                    element = int(element)
                     if element in d:
                         d[element] =+ 1
                     else:
