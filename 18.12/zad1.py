@@ -21,3 +21,22 @@ def haslo(d):
         return True
 
 print(haslo(slownik(pwd)))
+
+
+------------------------------------
+pwd = 'Password1'
+
+def haslo(tekst):
+    czyCyfra = False
+    czyDuza = False
+    czyMala = False
+    for i in tekst:
+        if i.isupper():
+            czyDuza = True
+        elif i.islower():
+            czyMala = True
+        elif i.isnumeric():
+            czyCyfra = True
+    return czyDuza and czyCyfra and czyMala
+
+print(haslo(pwd))
