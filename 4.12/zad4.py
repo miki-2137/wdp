@@ -25,3 +25,23 @@ def slownik(lista):
     return d
 
 print(slownik(plik('test2.txt')))
+
+-------------------------------------
+def program(sciezka):
+    d = {}
+    with open(sciezka,'r') as plik:
+        for linia in plik:
+            elementy = linia.split()
+            for element in elementy:
+                try:
+                    liczba = int(element)
+                    if element in d:
+                        d[element] =+ 1
+                    else:
+                        d[element] = 1
+                except:
+                    pass
+    return d
+
+
+print(program('test.txt'))
